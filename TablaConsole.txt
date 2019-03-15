@@ -1,0 +1,22 @@
+package progra2019;
+import java.util.*;
+
+public class Tabla {
+    public static void main(String[] args) {
+        int n;
+        int i;
+        Scanner sc=new Scanner(System.in);
+        n=0;
+        while (n<=10) {
+            System.out.println("____________________________________");
+            System.out.println("La tabla del " + n + " es: ");
+            System.out.println(" ");
+            i=0;
+            while (i<=10) {
+                System.out.println(n + " X " + i + " = " + n*i);
+                i++;
+            }
+            n++;
+        }
+    }
+}

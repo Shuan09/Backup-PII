@@ -1,0 +1,16 @@
+package progra2019;
+import java.util.*;
+
+public class Ejercicio1for {
+    public static void main(String[] args) {
+        int num;
+        int x=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ingrese el valor con el que desea iniciar: ");
+        num=sc.nextInt();
+        System.out.println("Proceso con multiplos de 2: ");
+        for (x=num ; x<=100 ; x=x+2) {
+            System.out.println(x);
+        }
+    }
+}

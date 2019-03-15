@@ -1,0 +1,19 @@
+package Ejejoption;
+import javax.swing.JOptionPane;
+
+public class Tabla {
+    public static void main(String[] args) {
+        int n;
+        int i;
+        n=0;
+        while (n<=10) {
+            JOptionPane.showMessageDialog(null,"La tabla del " + n + " es: ");
+            i=0;
+            while (i<=10) {
+                JOptionPane.showMessageDialog(null,n + " X " + i + " = " + n*i);
+                i++;
+            }
+            n++;
+        }
+    }
+}

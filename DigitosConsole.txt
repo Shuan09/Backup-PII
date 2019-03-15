@@ -1,0 +1,19 @@
+package progra2019;
+import java.util.*;
+
+public class Digitos {
+    public static void main(String[] args) {
+        int numero;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("BIENVENIDO AL SISTEMA DE INGRESO DE NUMERO \nPARA CALCULAR SUS DIGITOS");
+        System.out.println("Inserte un numero para calcular cuantos digitos tiene: ");
+        numero=sc.nextInt();
+        if (numero>0 && numero<10) {
+            System.out.println("Los digitos que tiene su numero son: 1");
+        } else {
+            if (numero>=10 && numero<100) {
+                System.out.println("Los digitos que tiene su numero son: 2");
+            }
+        }
+    }
+}

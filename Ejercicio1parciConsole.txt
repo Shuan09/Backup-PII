@@ -1,0 +1,32 @@
+package ejers;
+import java.util.*;
+
+public class Ejers2 {
+    public static void main(String[] args) {
+        int i;
+        int numero;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ingrese la cantidad de numeros que desea ingresar: ");
+        numero = sc.nextInt();
+        int[] todos = new int[numero];
+        for (i = 0; i < numero; i++) {
+            System.out.println("Ingrese el numero " + (i + 1) + " :");
+            todos[i]=sc.nextInt();
+        }
+        String repetidos = "";
+        for (i = 0; i < numero; i++) {
+            int abuscar = todos[i];
+            int veces = 0;
+            int j;
+            for (j = 0; j < numero; j++) {
+                if (todos[j] == abuscar) {
+                    veces = veces + 1;
+                }
+            }
+            if (veces > 1) {
+                repetidos = repetidos + abuscar + ", ";
+            }
+        }
+        System.out.println("Repetidos:  \n" + repetidos);
+    }
+}

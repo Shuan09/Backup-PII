@@ -1,0 +1,14 @@
+package Ejejoption;
+import javax.swing.JOptionPane;
+
+public class Eje1for {
+    public static void main(String[] args) {
+        int num;
+        int x=0;
+        num = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor con el que desea iniciar: "));
+        JOptionPane.showMessageDialog(null,"Proceso con multiplos de 2: ");
+        for (x=num ; x<=100 ; x=x+2) {
+            JOptionPane.showMessageDialog(null,x);
+        }
+    }
+}

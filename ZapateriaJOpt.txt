@@ -1,0 +1,18 @@
+package Ejejoption;
+import javax.swing.JOptionPane;
+
+public class Zapateria {
+    public static void main(String[] args) {
+        double precio;
+        String cliente;
+        JOptionPane.showMessageDialog(null,"Bienvenido a la tienda de zapatos");
+        cliente = JOptionPane.showInputDialog("Ingrese su nombre: ");
+        precio = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el precio de los zapatos que llevara Cliente " 
+                + cliente + " :"));
+        if (precio>150.00) {
+            JOptionPane.showMessageDialog(null,"Felicidades tiene un descuento de el 20% asi que pagara: " + ((precio - (precio*0.20))));
+        } else {
+            JOptionPane.showMessageDialog(null,"Su total a pagar es de: " + precio);
+        }
+    }
+}

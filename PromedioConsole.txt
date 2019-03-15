@@ -1,0 +1,43 @@
+package progra2019;
+import java.util.*;
+
+public class Promedio {
+    public static void main(String[] args) {
+        double l1;
+        double p1;
+        double l2;
+        double p2;
+        double l3;
+        double p3;
+        double pr1;
+        double pr2;
+        double pr3;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("BIENVENIDO AL INGRESO DE NOTAS");
+        System.out.println("Ingrese nota de laboratorio 1: ");
+        l1=sc.nextDouble();
+        System.out.println("Ingrese nota de parcial 1: ");
+        p1=sc.nextDouble();
+        pr1=(l1*0.40) + (p1*0.60);
+        System.out.println("Ingrese nota de laboratorio 2: ");
+        l2=sc.nextDouble();
+        System.out.println("Ingrese nota de parcial 2: ");
+        p2=sc.nextDouble();
+        pr2=(l2*0.40) + (p2*0.60);
+        System.out.println("Ingrese nota de laboratorio 3: ");
+        l3=sc.nextDouble();
+        System.out.println("Ingrese nota de parcial 3: ");
+        p3=sc.nextDouble();
+        pr3=(l3*0.40) + (p3*0.60);
+        double promedio=(pr1 + pr2 + pr3)/3;
+        if (promedio>=7.0) {
+            System.out.println("Promedio: ");
+            System.out.println(String.format("%.1f",promedio));
+            System.out.println("APROBADO");
+        } else {
+            System.out.println("Promedio: ");
+            System.out.println(String.format("%.1f",promedio));
+            System.out.println("REPROBADO");
+        }
+    }
+}

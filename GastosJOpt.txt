@@ -1,0 +1,32 @@
+package Ejejoption;
+import javax.swing.JOptionPane;
+
+public class Gastos {
+    public static void main(String[] args) {
+        double cole = 55;
+        double agua = 50;
+        double luz = 20;
+        int hij;
+        String nom;
+        System.out.println("Bienvenido al calculo de gastos de un padre");
+        nom = JOptionPane.showInputDialog("Ingrese su nombre padre de familia: ");
+        JOptionPane.showMessageDialog(null,"Bienvenido padre " + nom + " \nA continuacion todos sus gastos: ");
+        JOptionPane.showMessageDialog(null,"Total de agua: $" + agua);
+        JOptionPane.showMessageDialog(null,"Total de luz : $" + luz);
+        JOptionPane.showMessageDialog(null,"Gasto colegiatura: ");
+        hij = Integer.parseInt(JOptionPane.showInputDialog("Cuantos hijos tiene matriculados: "));
+        double totalc=(cole*hij);
+        double descuento=(totalc-(totalc*0.50));
+        if (hij>=5) {
+            JOptionPane.showMessageDialog(null,"Su total por pagar de colegiatura es: $" + totalc + 
+                    "\nY por matricular 5 hijos o mas tiene un descuento de el 50%"
+                            + "\nEntonces su total es de: $" + descuento);
+             JOptionPane.showMessageDialog(null,"Su total por pagar todo padre " + nom + 
+                " es de: $" + (agua+luz+descuento));
+        } else {
+            JOptionPane.showMessageDialog(null,"Su total por pagar de colegiatura es de: $" + totalc);
+            JOptionPane.showMessageDialog(null,"Su total por pagar todo padre " + nom + 
+                " es de: $" + (agua+luz+totalc));
+        }
+    }
+}

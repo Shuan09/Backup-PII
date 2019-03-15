@@ -1,0 +1,46 @@
+package Ejejoption;
+import javax.swing.JOptionPane;
+
+public class Promedio {
+    public static void main(String[] args) {
+        String lab1;
+        double l1;
+        String par1;
+        double p1;
+        String lab2;
+        double l2;
+        String par2;
+        double p2;
+        String lab3;
+        double l3;
+        String par3;
+        double p3;
+        double pr1;
+        double pr2;
+        double pr3;
+        JOptionPane.showMessageDialog(null,"BIENVENIDO AL INGRESO DE NOTAS");
+        lab1=JOptionPane.showInputDialog("Ingrese nota de laboratorio 1: ");
+        par1=JOptionPane.showInputDialog("Ingrese nota de parcial 1: ");
+        l1 = Double.parseDouble(lab1);
+        p1 = Double.parseDouble(par1);
+        pr1=(l1*0.40) + (p1*0.60);
+        lab2=JOptionPane.showInputDialog("Ingrese nota de laboratorio 2: ");
+        par2=JOptionPane.showInputDialog("Ingrese nota de parcial 2: ");
+        l2 = Double.parseDouble(lab2);
+        p2 = Double.parseDouble(par2);
+        pr2=(l2*0.40) + (p2*0.60);
+        lab3 = JOptionPane.showInputDialog("Ingrese nota de laboratorio 3: ");
+        par3 = JOptionPane.showInputDialog("Ingrese nota de parcial 3: ");
+        l3 = Double.parseDouble(lab3);
+        p3 = Double.parseDouble(par3);
+        pr3=(l3*0.40) + (p3*0.60);
+        double promedio=(pr1 + pr2 + pr3)/3;
+        if (promedio>=7.0) {
+            JOptionPane.showMessageDialog(null,"Promedio: " + promedio);
+            JOptionPane.showMessageDialog(null,"APROBADO");
+        } else {
+            JOptionPane.showMessageDialog(null,"Promedio: " + promedio);
+            JOptionPane.showMessageDialog(null,"REPROBADO");
+        }
+    }
+}

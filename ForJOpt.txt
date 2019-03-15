@@ -1,0 +1,10 @@
+package Ejejoption;
+import javax.swing.JOptionPane;
+
+public class For {
+    public static void main(String[] args) {
+        for (int num=2 ; num<=100 ; num++) {
+            JOptionPane.showMessageDialog(null,num);
+        }
+    }
+}

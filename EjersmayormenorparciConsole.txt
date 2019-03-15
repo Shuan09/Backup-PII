@@ -1,0 +1,51 @@
+package ejers;
+
+import java.util.*;
+
+public class Ejersmayormenor {
+
+    public static void main(String[] args) {
+        int n1;
+        int n2;
+        int n3;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Bienvenido al ingreso de notas de mayor a menor");
+        System.out.println("Ingrese el numero 1: ");
+        n1 = sc.nextInt();
+        System.out.println("Ingrese el numero 2: ");
+        n2 = sc.nextInt();
+        System.out.println("Ingrese el numero 3: ");
+        n3 = sc.nextInt();
+        if (n1 > n2 && n1 > n3 && n2 > n3) {
+            System.out.println("Numeros ordenados de mayor a menor: ");
+            System.out.println(n1);
+            System.out.println(n2);
+            System.out.println(n3);
+        } else if (n2 > n1 && n2 > n3 && n1 > n3) {
+            System.out.println("Numeros ordenados de mayor a menor: ");
+            System.out.println(n2);
+            System.out.println(n1);
+            System.out.println(n3);
+        } else if (n3 > n1 && n3 > n2 && n1 > n2) {
+            System.out.println("Numeros ordenados de mayor a menor: ");
+            System.out.println(n3);
+            System.out.println(n1);
+            System.out.println(n2);
+        } else if (n1 > n2 && n1 > n3 && n2 < n3) {
+            System.out.println("Numeros ordenados de mayor a menor: ");
+            System.out.println(n1);
+            System.out.println(n3);
+            System.out.println(n2);
+        } else if (n2 > n1 && n2 > n3 && n1 < n3) {
+            System.out.println("Numeros ordenados de mayor a menor: ");
+            System.out.println(n2);
+            System.out.println(n3);
+            System.out.println(n1);
+        } else if (n3 > n1 && n3 > n2 && n1 < n2) {
+            System.out.println("Numeros ordenados de mayor a menor: ");
+            System.out.println(n3);
+            System.out.println(n2);
+            System.out.println(n1);
+        }
+    }
+}

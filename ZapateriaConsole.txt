@@ -1,0 +1,20 @@
+package Ejercicio1;
+import java.util.*;
+
+public class Zapateria {
+    public static void main(String[] args) {
+        double precio;
+        String cliente;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Bienvenido a la tienda de zapatos");
+        System.out.println("Ingrese su nombre: ");
+        cliente=sc.nextLine();
+        System.out.println("Ingrese el precio de los zapatos que llevara Cliente " + cliente + " :");
+        precio=sc.nextDouble();
+        if (precio>150.00) {
+            System.out.println("Felicidades tiene un descuento de el 20% asi que pagara: " + ((precio - (precio*0.20))));
+        } else {
+            System.out.println("Su total a pagar es de: " + precio);
+        }
+    }
+}

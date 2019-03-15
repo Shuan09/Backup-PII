@@ -1,0 +1,18 @@
+package progra2019;
+import java.util.*;
+
+public class Ejemientras {
+    public static void main(String[] args) {
+        int ini;
+        int fin;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ingrese el valor inicial: ");
+        ini=sc.nextInt();
+        System.out.println("Ingrese el valor final: ");
+        fin=sc.nextInt();
+        while(ini<=fin) {
+            System.out.println("Valor actual: " + ini);
+            ini++;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+package progra2019;
+import java.util.*;
+public class Progra2019 {
+    
+    public static void main(String[] args) {
+        String user="josh";
+        String respuestau;
+        String pass="123";
+        String respuestap;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ingrese su usuario: ");
+        respuestau=sc.nextLine();
+        if (respuestau.equals(user)){
+            System.out.println("Ingrese contraseña: ");
+            respuestap=sc.nextLine();
+            if (respuestap.equals(pass)) {
+                System.out.println("BIENVENIDO USUARIO " + user); 
+            } else {
+            System.out.println("ERROR");
+            }
+        } else {
+          System.out.println("ERROR");
+        }
+    }
+}

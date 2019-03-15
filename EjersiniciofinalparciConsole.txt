@@ -1,0 +1,18 @@
+package ejers;
+import java.util.*;
+
+public class Ejersiniciofinal {
+    public static void main(String[] args) {
+        int inicio;
+        int fin;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ingrese el valor inicial: ");
+        inicio=sc.nextInt();
+        System.out.println("Ingrese el valor final: ");
+        fin=sc.nextInt();
+        while(inicio<=fin) {
+            System.out.println("Numero " + inicio);
+            inicio++;
+        }
+    }
+}

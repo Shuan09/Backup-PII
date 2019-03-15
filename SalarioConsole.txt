@@ -1,0 +1,27 @@
+package Ejercicio1;
+import java.util.*;
+public class Salario {
+    public static void main(String[] args) {
+        int horas;
+        int horax;
+        int horat;
+        String empleado;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Bienvenido a la consulta de salario");
+        System.out.println("Ingrese su nombre: ");
+        empleado=sc.nextLine();
+        System.out.println("Bienvenido empleado " + empleado + 
+                "\nA continuacion ingrese las horas que usted trabaja para determinar su salario: ");
+        horas=sc.nextInt();
+        if (horas<=40) {
+            System.out.println("Usted gana $10 por hora y su total de salario es: " + "$" + (horas*10) +
+                    "\nUsted no posee horas extra");
+        } else {
+            horax=horas-40;
+            horat=horax*20;
+            System.out.println("Usted gana $15 dolares por las primeras 40 horas con un total de " + "$" + 
+             + ((horas-horax)*15) + "\nY tiene un total de salario con horas extra de: " +
+            "$" + (((horas-horax)*15)+horat));
+        }
+    }
+}

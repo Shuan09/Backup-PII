@@ -1,0 +1,35 @@
+package Ejercicio1;
+import java.util.*;
+
+public class Gastos {
+    public static void main(String[] args) {
+        double cole = 55;
+        double agua = 50;
+        double luz = 20;
+        int hij;
+        String nom;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Bienvenido al calculo de gastos de un padre");
+        System.out.println("Ingrese su nombre padre de familia: ");
+        nom=sc.nextLine();
+        System.out.println("Bienvenido padre " + nom + " \nA continuacion todos sus gastos: ");
+        System.out.println("Total de agua: " + agua);
+        System.out.println("Total de luz : " + luz);
+        System.out.println("Gasto colegiatura: ");
+        System.out.println("Cuantos hijos tiene matriculados: ");
+        hij=sc.nextInt();
+        double totalc=(cole*hij);
+        double descuento=(totalc-(totalc*0.50));
+        if (hij>=5) {
+            System.out.println("Su total por pagar de colegiatura es: " + totalc + 
+                    "\nY por matricular 5 hijos o mas tiene un descuento de el 50%"
+                            + "\nEntonces su total es de: " + descuento);
+             System.out.println("Su total por pagar todo padre " + nom + 
+                " es de: " + (agua+luz+descuento));
+        } else {
+            System.out.println("Su total por pagar de colegiatura es de: " + totalc);
+             System.out.println("Su total por pagar todo padre " + nom + 
+                " es de: " + (agua+luz+totalc));
+        }
+    }
+}

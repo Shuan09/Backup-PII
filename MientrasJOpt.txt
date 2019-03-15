@@ -1,0 +1,12 @@
+package Ejejoption;
+import javax.swing.JOptionPane;
+
+public class Mientras {
+    public static void main(String[] args) {
+        int var=1;
+        while(var<=100) {
+            JOptionPane.showMessageDialog(null,"Iterado " + var + " veces");
+            var++;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+package Ejejoption;
+import javax.swing.JOptionPane;
+
+public class Ejemientras {
+    public static void main(String[] args) {
+        int ini;
+        int fin;
+        ini = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor inicial: "));
+        fin = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor final: "));
+        while(ini<=fin) {
+            JOptionPane.showMessageDialog(null,"Valor actual: " + ini);
+            ini++;
+        }
+    }
+}

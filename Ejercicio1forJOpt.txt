@@ -1,0 +1,11 @@
+package Ejejoption;
+import javax.swing.JOptionPane;
+
+
+public class Ejercicio1for {
+    public static void main(String[] args) {
+        for (int num=5 ; num<=100 ; num=num+5) {
+            JOptionPane.showMessageDialog(null,num);
+        }
+    }
+}

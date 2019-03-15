@@ -1,0 +1,55 @@
+package Ejejoption;
+import javax.swing.JOptionPane;
+
+public class Mayornota {
+    public static void main(String[] args) {
+        double n1;
+        double n2;
+        double n3;
+        double n4;
+        double n5;
+        JOptionPane.showMessageDialog(null,"Bienvenido al ingreso de notas y determinar cual es la nota mayor");
+        n1 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese nota 1: "));
+        while (n1<0 || n1>10) {
+            JOptionPane.showMessageDialog(null,"ERROR! \nLa nota no es valida");
+            n1 = Double.parseDouble(JOptionPane.showInputDialog("Intente otra vez: "));
+        }
+        n2 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese nota 2: "));
+        while (n2<0 || n2>10) {
+            JOptionPane.showMessageDialog(null,"ERROR! \nLa nota no es valida");
+            n1 = Double.parseDouble(JOptionPane.showInputDialog("Intente otra vez: "));
+        }
+        n3 = Double.parseDouble("Ingrese nota 3: ");
+        while (n3<0 || n3>10) {
+            JOptionPane.showMessageDialog(null,"ERROR! \nLa nota no es valida");
+            n3 = Double.parseDouble("Intente otra vez: ");
+        }
+        n4 = Double.parseDouble("Ingrese nota 4: ");
+        while (n4<0 || n4>10) {
+            JOptionPane.showMessageDialog(null,"ERROR! \nLa nota no es valida");
+            n4 = Double.parseDouble("Intente otra vez: ");
+        }
+        n5 = Double.parseDouble("Ingrese nota 5: ");
+        while (n5<0 || n5>10) {
+            JOptionPane.showMessageDialog(null,"ERROR! \nLa nota no es valida");
+            n5 = Double.parseDouble("Intente otra vez: ");
+        }
+        if (n1 > n2 && n1 > n3 && n1 > n4 && n1 > n5) {
+            JOptionPane.showMessageDialog(null,"La nota mayor es: " + n1);
+        } else {
+            if (n2 >n3 && n2 > n4 && n2 > n5) {
+                JOptionPane.showMessageDialog(null,"La nota mayor es: " + n2);
+            } else {
+                if (n3 > n4 && n3 > n5) {
+                    JOptionPane.showMessageDialog(null,"La nota mayor es: " + n3);
+                } else {
+                    if (n4 > n5) {
+                        JOptionPane.showMessageDialog(null,"La nota mayor es: " + n4);
+                    } else {
+                        JOptionPane.showMessageDialog(null,"La nota mayor es : " + n5);
+                    }
+                }
+            }
+        }
+    }
+}

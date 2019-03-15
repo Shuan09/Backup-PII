@@ -1,0 +1,22 @@
+package Ejejoption;
+import javax.swing.JOptionPane;
+
+public class progra2019 {
+    public static void main(String[] args) {
+        String user="josh";
+        String respuestau;
+        String pass="123";
+        String respuestap;
+        respuestau=JOptionPane.showInputDialog("Ingrese su usuario: ");
+        if (respuestau.equals(user)){
+            respuestap=JOptionPane.showInputDialog("Ingrese contraseña: ");
+            if (respuestap.equals(pass)) {
+                JOptionPane.showMessageDialog(null,"BIENVENIDO USUARIO " + user);
+            } else {
+            JOptionPane.showMessageDialog(null,"ERROR");
+            }
+        } else {
+          JOptionPane.showMessageDialog(null,"ERROR");
+        }
+    }
+}

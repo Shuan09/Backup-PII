@@ -1,0 +1,15 @@
+package ejers;
+import javax.swing.JOptionPane;
+
+public class Ejersiniciofinaljopt {
+    public static void main(String[] args) {
+        int inicio;
+        int fin;
+        inicio = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor inicial: "));
+        fin = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor final: "));
+        while(inicio<=fin) {
+            JOptionPane.showMessageDialog(null,"Numero " + inicio);
+            inicio++;
+        }
+    }
+}
